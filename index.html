@@ -3,7 +3,10 @@
 <head>
 	<title>shortCuts</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400|Ubuntu+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+	<a href="https://github.com/you" style="position: absolute; top: 0; right: 0; border: 0;" ><img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <body>
 	<header>
 		<h1>Shortcuts.io</h1>
@@ -80,11 +83,62 @@
 				<div class="shortcut-btn">A</div>
 			</div>
 		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+		<div class="shortcut">
+			<div class="shortcut-content">
+				<div class="shortcut-btn">Ctrl</div>
+				<div class="separator">+</div>
+				<div class="shortcut-btn">A</div>
+			</div>
+		</div>
+
 
 	</div>
 
 	<footer>
-		Copyright - 2017 
+		<div class="credits tile">
+			<span>Made with <b><i class="fa fa-heart love" aria-hidden="true"></i> </b> by <a href="#" class="personal-site-link"><b>Hamza Tanji Cherkaoui</b></a></span>
+			<p>
+				<a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i></a>
+			</p>
+
+		</div>
 	</footer>
 </body>
 </html>
@@ -195,6 +249,7 @@ header .header-img {
 
 }
 .shortcut {
+	cursor: pointer;
 	background-color: #fff;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
@@ -202,6 +257,11 @@ header .header-img {
 	grid-gap: 1em;
 	border-radius: 5px;
 	box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.02), 0 8px 20px -2px rgba(0, 0, 0, 0.06), 0 6px 10px -6px rgba(0, 0, 0, 0.1);
+	transition: all .2s ease-in-out;
+}
+
+.shortcut:hover {
+	transform: scale(1.1);
 }
 .shortcut .shortcut-btn {
 	background: #91d4ff;
@@ -226,12 +286,42 @@ header .header-img {
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
-.
+
 footer {
-	border: 1px solid #dadada;
+	background-image: linear-gradient(to right bottom, #ff4f5e, #f54353, #ec3649, #e2273e, #d81234);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr ;
+}
+.credits {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+
+}
+
+.tile {
+	background-color: #fff;
+	box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.1), 0 8px 20px -2px rgba(0, 0, 0, 0.1), 0 6px 10px -6px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	padding: 30px;
+	width: 100%;
+
 
 }
 *:focus {
 	outline: none;
+}
+.personal-site-link {
+	text-decoration: underline;
+	color: #78ff00;
+	
+	
+}
+.love {
+	color: #00b6ff;
 }
 </style>
